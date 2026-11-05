@@ -127,3 +127,50 @@ th { background: var(--green-50); color: var(--green-900); }
   .kv > div { grid-template-columns: 1fr; gap: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .spinner { animation-duration: 3s; } .sidebar { transition: none; } }
+
+
+/* GPS Tracking */
+
+.gps-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.gps-pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 0 5px rgba(22, 163, 74, 0.15);
+}
+
+.gps-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+}
+
+.gps-stat strong {
+  font-size: 1.8rem;
+  color: var(--green-900);
+}
+
+.gps-map-placeholder {
+  min-height: 220px;
+  border-radius: 12px;
+  background: var(--green-50);
+  border: 1px dashed var(--green-200);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+@media(max-width: 600px) {
+  .gps-stat strong {
+    font-size: 1.4rem;
+  }
+}
