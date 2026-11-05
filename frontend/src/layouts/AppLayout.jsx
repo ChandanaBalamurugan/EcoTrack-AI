@@ -1,8 +1,27 @@
 import { useState } from "react";
 import { NavLink, Outlet, Link } from "react-router-dom";
-import { BarChart3, BookOpen, FileText, History, Leaf, LayoutDashboard, Lightbulb, Menu, PlusCircle, Search, SlidersHorizontal, Target, X } from "lucide-react";
+import {
+  BarChart3,
+  BookOpen,
+  FileText,
+  History,
+  Leaf,
+  LayoutDashboard,
+  Lightbulb,
+  Menu,
+  PlusCircle,
+  Search,
+  SlidersHorizontal,
+  Target,
+  X,
+  Route as RouteIcon,
+  Zap
+}
+ from "lucide-react";
 
 const links = [
+  ["/electricity-scanner", "Electricity bill scanner", Zap],
+  ["/tracking", "GPS trip tracking", RouteIcon],
   ["/dashboard", "Dashboard", LayoutDashboard],
   ["/add", "Add activity", PlusCircle],
   ["/history", "Activity history", History],
